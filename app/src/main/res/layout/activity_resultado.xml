@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ResultadoActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Metros"
+        android:id="@+id/label_metros"
+        android:layout_marginTop="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="9"
+        android:id="@+id/edt_metros"
+        android:text="edtmetros"
+        android:layout_alignBottom="@+id/label_metros"
+        android:layout_alignStart="@+id/edt_kilometros" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Milhas Terrestres"
+        android:id="@+id/label_mterrestres"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/label_kilometros"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="9"
+        android:id="@+id/edt_mnauticas"
+        android:text="mnauticas"
+        android:layout_alignBaseline="@+id/label_mnauticas"
+        android:layout_alignBottom="@+id/label_mnauticas"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Milhas Náuticas"
+        android:id="@+id/label_mnauticas"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/label_mterrestres"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quilometros"
+        android:id="@+id/label_kilometros"
+        android:layout_alignBottom="@+id/edt_kilometros"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="9"
+        android:id="@+id/edt_kilometros"
+        android:text="edt_kilometros"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/edt_metros"
+        android:layout_alignStart="@+id/edt_mnauticas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="9"
+        android:id="@+id/edt_mterrestre"
+        android:text="edt_mterrestres"
+        android:layout_alignTop="@+id/label_mterrestres"
+        android:layout_alignStart="@+id/edt_kilometros" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fechar"
+        android:id="@+id/btn_fechar"
+        android:layout_below="@+id/label_mnauticas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp" />
+
+
+</RelativeLayout>

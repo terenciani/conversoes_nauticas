@@ -41,8 +41,8 @@
         android:id="@+id/btn_kilomotros"
         android:layout_marginTop="49dp"
         android:layout_below="@+id/edt_valor"
-        android:layout_alignStart="@+id/btn_mterrestres"
-        android:layout_alignEnd="@+id/btn_mterrestres" />
+        android:layout_alignEnd="@+id/btn_mterrestres"
+        android:layout_toEndOf="@+id/label_valor" />
 
     <Button
         android:layout_width="wrap_content"
@@ -51,7 +51,8 @@
         android:id="@+id/btn_mnauticas"
         android:layout_alignTop="@+id/btn_mterrestres"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/label_valor" />
+        android:layout_toStartOf="@+id/label_valor"
+        android:layout_alignBottom="@+id/btn_mterrestres" />
 
     <Button
         android:layout_width="wrap_content"
@@ -60,7 +61,8 @@
         android:id="@+id/btn_mterrestres"
         android:layout_marginTop="44dp"
         android:layout_below="@+id/btn_kilomotros"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/label_valor" />
 
 
 
